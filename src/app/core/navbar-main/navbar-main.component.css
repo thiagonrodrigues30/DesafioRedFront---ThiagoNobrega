@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+#nav-logo {
+	font-family: 'Anton', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: #FFD700;
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+#nav-mobile {
+	font-size: 21px;
+	font-weight: bold;
+	padding: 0px 20px 0px 20px;
+	margin-left: 90px;
+}
+
+#nav-mobile li a, #nav-mobile2 li a {
+	padding: 0px 20px 0px 20px;
+	color: #A9A9A9;
+}
+
+nav ul li a:hover {
+   /*background-color: #696969;*/
+   color: white !important;
+   text-decoration: none;
+}
+
+#nav-mobile2 li {
+	border-color: #A9A9A9 !important;
+	border-left: 0.1px solid;
+}
+
+.active {
+  color: white !important;
+}
+
+.material-icons.md-18 { 
+	font-size: 18px; 
+}
+
+.avatar {
+    display: inline-block;
+    height: 100%;
+}
+
+#user-avatar {
+	width: 35px;
+	height: 35px;
+	vertical-align: middle;
+	border-radius: 3px;
+}

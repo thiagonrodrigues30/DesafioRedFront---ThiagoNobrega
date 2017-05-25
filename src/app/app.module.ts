@@ -6,10 +6,12 @@ import { HttpModule } from '@angular/http';
 import { AlertModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
+import { NavbarMainComponent } from './core/navbar-main/navbar-main.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarMainComponent
   ],
   imports: [
     BrowserModule,
