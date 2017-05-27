@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700');
+
+#title-box {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	border-left: 2px solid #FFD700;
+	padding: 3px 3px 3px 10px;
+	font-size: 11.5px;
+	clear: both;
+}
+
+#content-box {
+	padding: 3px 3px 3px 14px;
+}
+
+#title-right {
+	float: right;
+	color: #FFD700;
+}
+
+#line {
+	color: #D3D3D3;
+}
+
+
+#item-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 11.5px;
+}
+
+#item-info {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 10.5px;
+	color: #C0C0C0;
+}
+
+a , a:hover, a:link , a:visited , a:active {
+ 	text-decoration: none;
+ 	color: #FFD700;
+}

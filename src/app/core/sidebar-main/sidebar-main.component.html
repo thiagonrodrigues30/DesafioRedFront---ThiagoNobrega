@@ -1,0 +1,12 @@
+<div id="title-box">
+	<span id="title-left" class="text-left">{{ title | uppercase }}</span><!-- Use pipe for uppercase -->
+	<span id="title-right" class="text-right"><a [href]="link">SEE MORE  ></a></span>
+</div>
+<div id="content-box">
+	<div *ngFor="let item of list | slice:0:maxSize">
+		<HR width="100%" align="right" id="line" noshade/>
+		<p id="item-title">{{ item.title }}</p>
+		<p id="item-info">{{ item.info }}</p>
+	</div>
+	<HR width="100%" align="right" id="line" noshade/>
+</div>
