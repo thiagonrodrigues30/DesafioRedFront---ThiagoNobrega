@@ -8,12 +8,16 @@ import { HomeService } from './home.service';
 })
 export class HomeComponent implements OnInit {
 
-	list: any[] = [];
+	listWeek: any[] = [];
+  listBoxOffice: any[] = [];
+  listRealTime: any[] = [];
 
   constructor(private homeService: HomeService) { }
 
   ngOnInit() {
-  	this.list = this.homeService.getWeekMovies();
+  	this.listWeek = this.homeService.getWeekMovies();
+    this.listBoxOffice = this.homeService.getBoxOffice();
+    this.listRealTime = this.homeService.getRealTime();
   }
 
   // TODO metodo de teste, deletar depois

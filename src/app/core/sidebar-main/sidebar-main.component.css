@@ -23,21 +23,37 @@
 	color: #D3D3D3;
 }
 
-
 #item-title {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	font-size: 11.5px;
+	font-size: 10.5px;
 }
 
 #item-info {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	font-size: 10.5px;
+	font-size: 9px;
 	color: #C0C0C0;
 }
 
 a , a:hover, a:link , a:visited , a:active {
  	text-decoration: none;
  	color: #FFD700;
+}
+
+#item-time {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 8.5px;
+	color: #D3D3D3;
+}
+
+#index-box {
+	padding: 10px;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border: 1px solid #D3D3D3;
+	border-radius: 100%;
+	position: absolute;
 }

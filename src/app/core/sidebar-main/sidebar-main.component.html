@@ -1,12 +1,22 @@
 <div id="title-box">
-	<span id="title-left" class="text-left">{{ title | uppercase }}</span><!-- Use pipe for uppercase -->
+	<span id="title-left" class="text-left">{{ title | uppercase }}</span>
 	<span id="title-right" class="text-right"><a [href]="link">SEE MORE  ></a></span>
 </div>
 <div id="content-box">
-	<div *ngFor="let item of list | slice:0:maxSize">
+	<div *ngFor="let item of list | slice:0:maxSize; let i = index   ">
 		<HR width="100%" align="right" id="line" noshade/>
-		<p id="item-title">{{ item.title }}</p>
-		<p id="item-info">{{ item.info }}</p>
+	
+		<div id="index-box" class="text-center" *ngIf="indexed">
+			{{ i + 1 }}
+		</div>
+		
+		<div id="info" [style.margin-left]="indexed ? '50px' : '0px'">
+			<p id="item-title">{{ item.title }}</p>
+			<p id="item-info">{{ item.info }}</p>
+			<p id="item-time" *ngIf="time">{{ item.time }}</p>
+		</div>
+		
 	</div>
+
 	<HR width="100%" align="right" id="line" noshade/>
 </div>

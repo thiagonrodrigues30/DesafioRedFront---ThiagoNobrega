@@ -5,7 +5,9 @@
     <div class="col-md-10 col-md-offset-1">
     	<div class="col-md-9"></div>
     	<div class="col-md-3">
-    		<sidebar-main [list]="list"></sidebar-main>
+    		<sidebar-main [list]="listBoxOffice" title="box office" indexed="true"></sidebar-main><br>
+    		<sidebar-main [list]="listWeek" title="opening this week"></sidebar-main><br>
+    		<sidebar-main [list]="listRealTime" title="real time" time="true"></sidebar-main>
     	</div>
 		</div>
 	</div>
