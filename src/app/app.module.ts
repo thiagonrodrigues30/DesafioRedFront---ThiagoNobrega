@@ -11,6 +11,9 @@ import { SidebarMainComponent } from './core/sidebar-main/sidebar-main.component
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { HomeService } from './home/home.service';
+import { CarouselMainComponent } from './home/carousel-main/carousel-main.component';
+import { CarouselModule } from 'ngx-bootstrap';
+import { NewsComponent } from './home/news/news.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { HomeService } from './home/home.service';
     NavbarMainComponent,
     SidebarMainComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    CarouselMainComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,7 @@ import { HomeService } from './home/home.service';
     HttpModule,
     AlertModule.forRoot(),
     MaterializeModule,
-    
+    CarouselModule.forRoot()
   ],
   providers: [HomeService],
   exports: [SidebarMainComponent],

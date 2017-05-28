@@ -1,0 +1,29 @@
+<div class="row">
+	<div *ngFor="let new of news | slice:0:2" class="col-md-6">
+		<div id="news-box">
+			<div id="img-box">
+				<a href="{{ new.link }}">
+					<img id="news-image" src="{{ new.image }}" alt="" />
+				</a>
+			</div>
+			<div id="info-box">
+				<h4 id="news-title">{{ new.title | slice:0:70}}</h4>
+				<p id="news-info">{{ new.info | slice:0:110}}</p>
+				<p *ngIf="new.time != ''" id="news-extra">{{ new.time }}   <a style="margin-left: 20px;" href="{{ new.categoryLink }}">{{ new.category }}</a> in <a href="{{ new.subCategoryLink }}">{{ new.subCategory }}</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div *ngFor="let new of news | slice:2:6" class="col-md-4">
+		<div>
+			<div id="img-little-box">
+				<a href="{{ new.link }}">
+					<img id="news-little-img" src="{{ new.image }}">
+				</a>
+			</div>
+			<p id="news-little-title">{{ new.title | slice:0:60 }}</p>
+		</div>
+	</div>
+</div>

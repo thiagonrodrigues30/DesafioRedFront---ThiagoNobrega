@@ -1,9 +1,12 @@
 <!-- Site Body -->
 <br>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-    	<div class="col-md-9"></div>
+  <div class="row" style="margin-top: -20px">
+    <div id="home-content" class="col-md-10 col-md-offset-1">
+    	<div class="col-md-8">
+            <news [list]="listNews"></news>
+        </div>
+        <div class="col-md-1"></div>
     	<div class="col-md-3">
     		<sidebar-main [list]="listBoxOffice" title="box office" indexed="true"></sidebar-main><br>
     		<sidebar-main [list]="listWeek" title="opening this week"></sidebar-main><br>
@@ -12,5 +15,3 @@
 		</div>
 	</div>
 </div>
-
-<button (click)="addMovie()">Adicionar</button>

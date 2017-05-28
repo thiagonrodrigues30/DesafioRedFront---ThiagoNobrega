@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700');
+
+#news-box {
+	height: 470px;
+}
+
+#img-box {
+	height: 350px;
+	overflow: hidden;
+}
+
+#news-image {
+	width: 100%;
+}
+
+#news-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#news-info {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	color: #C0C0C0;
+}
+
+#news-extra {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 8.5px;
+	color: #D3D3D3;
+}
+
+#info-box {
+	vertical-align: bottom;
+}
+
+a , a:hover, a:link , a:visited , a:active {
+ 	text-decoration: none;
+ 	color: #FFD700;
+}
+
+#news-little-img {
+	width: 100%;
+}
+
+#news-little-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#img-little-box {
+	height: 130px;
+	overflow: hidden;
+}

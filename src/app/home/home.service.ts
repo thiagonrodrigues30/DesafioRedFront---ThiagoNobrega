@@ -50,7 +50,64 @@ export class HomeService {
 		}
 	];
 
+	listNews: any[] = [{
+		image: 'https://s-media-cache-ak0.pinimg.com/736x/27/3e/f5/273ef58ee4cb6d3ee22c4475ad9b92dc.jpg',
+		title: 'Nominations Announced For 20th Art Directors Guild Awards',
+		info: 'Nominees for the Art Directors Guild (Adg, Iatse Local 800) 20th Annual Excellence in Production Design Awards in 11 categories of Production Design for theatrical motion pictures, television, commercials and music videos were announced by Adg Council Chair Marcia Hinds and Awards Producer Thomas Wilkins.',
+		link: '#',
+		time: '3 hours ago',
+		category: 'Entertainment',
+		categoryLink: '#',
+		subCategory: 'Celebrity',
+		subCategoryLink: '#'
+	}, {
+		image: 'https://cdn.miramax.com/media/_versions/Levon-Biss_Quentin-Tarantino_071212-2894_V1_square_md.jpg',
+		title: 'Tarantino Receives a Star on the Hollywood Walk of Fame',
+		info: 'LAPD is noticeably scarce as Samuel L. Jackson and numerous callaborators gather along with ...',
+		link: '#',
+		time: '',
+		category: '',
+		categoryLink: '',
+		subCategory: '',
+		subCategoryLink: ''
+	}, {
+		image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BOTU3OTIwNDg3M15BMl5BanBnXkFtZTgwNTA5MDM1NjE@._V1_.jpg',
+		title: 'Can \'Anomalisa\' take down Pixar rivals \'Inside Out\'',
+		info: 'For the first time in Oscar history, two Pixar films will be battling it out for Best Animated Feature in the same year: the upcoming "The Good Dinosaur" and summer smash hit "Inside Out." Is it possible that these two rivals might cancel each other out, thereby ensuring that Paramount\'s critical darling \"Anomalisa\" will claim Oscar gold? ...',
+		link: '#',
+		time: '',
+		category: '',
+		categoryLink: '',
+		subCategory: '',
+		subCategoryLink: ''
+	}, {
+		image: 'http://online.kinoshi.net/images/online_kinoshi_net/screens/i6yii6y-smotret-interesnyy-onlayn-film-vse-nachinaetsya-zavtra-2016.jpg',
+		title: 'Movie Adaptation of Mark Millar Comic Superior Finds Writers',
+		info: 'Fox is moving ahead with its fantasy movie “Superior,” bringing on the writing team of Brandon and Phillip Murphy to adapt Mark Millar’s comic book series, Variety has learned exclusively.',
+		link: '#',
+		time: '',
+		category: '',
+		categoryLink: '',
+		subCategory: '',
+		subCategoryLink: ''
+	}, {
+		image: 'http://estaticos02.elmundo.es/blogs/elmundo/sinnoticiasdedior/imagenes_posts/2014/01/14/87195_540x354.jpg',
+		title: 'Cate Blanchett to Be Honored by Costume Designers Guild',
+		info: 'Cate Blanchett will receive the Lacoste Spotlight Award at the 18th Costume Designers Guild Awards on Feb. 23 at the Beverly Hilton Hotel.',
+		link: '#',
+		time: '',
+		category: '',
+		categoryLink: '',
+		subCategory: '',
+		subCategoryLink: ''
+	}
+	];
+
   constructor() { }
+
+  getNews() {
+  	return this.listNews;
+  }
 
   getWeekMovies() {
 		return this.listWeek;
@@ -62,13 +119,6 @@ export class HomeService {
 
   getRealTime() {
   	return this.listRealTime;
-  }
-
-  // TODO metodo de teste, deletar depois
-  addMovie() {
-  	this.listWeek.push({
-			title: 'Teste Thiago',
-			info: 'Data, Binding, Real, Time'});
   }
 
 }
