@@ -18,18 +18,22 @@
 
 #nav-mobile li a, #nav-mobile2 li a {
 	padding: 0px 20px 0px 20px;
-	color: #A9A9A9;
+	color: #808080;
 }
 
 nav ul li a:hover {
-   /*background-color: #696969;*/
    color: white !important;
    text-decoration: none;
 }
 
+nav ul li a:link , a:visited , a:active {
+ 	text-decoration: none;
+ 	color: #808080;
+}
+
 #nav-mobile2 li {
-	border-color: #A9A9A9 !important;
-	border-left: 0.1px solid;
+	border-color: #2C2C2C !important;
+	border-left: 1px solid;
 }
 
 .active {
@@ -46,8 +50,12 @@ nav ul li a:hover {
 }
 
 #user-avatar {
-	width: 35px;
-	height: 35px;
+	width: 30px;
+	height: 30px;
 	vertical-align: middle;
 	border-radius: 3px;
+}
+
+#nav-container {
+	overflow: hidden;
 }
