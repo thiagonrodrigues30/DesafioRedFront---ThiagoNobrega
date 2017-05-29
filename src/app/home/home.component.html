@@ -1,17 +1,29 @@
 <!-- Site Body -->
 <br>
 <div class="container-fluid">
-  <div class="row" style="margin-top: -20px">
-    <div id="home-content" class="col-md-10 col-md-offset-1">
-    	<div class="col-md-8">
-            <news [list]="listNews"></news>
-        </div>
-        <div class="col-md-1"></div>
-    	<div class="col-md-3">
-    		<sidebar-main [list]="listBoxOffice" title="box office" indexed="true"></sidebar-main><br>
-    		<sidebar-main [list]="listWeek" title="opening this week"></sidebar-main><br>
-    		<sidebar-main [list]="listRealTime" title="real time" time="true"></sidebar-main>
-    	</div>
-		</div>
-	</div>
+    <div class="row" id="home-content">
+    	    <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-9">
+                        <news [list]="listNews"></news>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-11" style="padding-left: 0px;">
+                        <banner [info]="info1"></banner>
+                        <br>
+                        <banner [info]="info2"></banner>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+    	    <div class="col-md-3">
+    		    <sidebar-main [list]="listBoxOffice" title="box office" indexed="true"></sidebar-main><br>
+    		    <sidebar-main [list]="listWeek" title="opening this week"></sidebar-main><br>
+    		    <sidebar-main [list]="listRealTime" title="real time" time="true"></sidebar-main>
+    	    </div>
+            <div class="col-md-1"></div>
+    </div>
 </div>

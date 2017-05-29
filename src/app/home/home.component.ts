@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   listBoxOffice: any[] = [];
   listRealTime: any[] = [];
   listNews: any[] = [];
+  info1: any = {};
+  info2: any = {};
 
   constructor(private homeService: HomeService) { }
 
@@ -20,6 +22,8 @@ export class HomeComponent implements OnInit {
   	this.listWeek = this.homeService.getWeekMovies();
     this.listBoxOffice = this.homeService.getBoxOffice();
     this.listRealTime = this.homeService.getRealTime();
+    this.info1 = this.homeService.getInfo1();
+    this.info2 = this.homeService.getInfo2();
   }
 
 }

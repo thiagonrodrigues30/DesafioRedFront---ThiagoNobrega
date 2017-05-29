@@ -1,0 +1,43 @@
+#banner-container-image {
+	height: 400px;
+	overflow: hidden;
+}
+
+#banner-image {
+	width: 100%;
+}
+
+#banner-container-title{
+	position:relative;
+  bottom:330px;
+  left:100px;
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	border-left: 2px solid #FFD700;
+	padding: 3px 3px 3px 10px;
+	font-size: 11.5px;
+	clear: both;
+	color: white;
+}
+
+#banner-container-info {
+	position:relative;
+  bottom:250px;
+  left:110px;
+  width: 350px;
+}
+
+#item-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
+}
+
+#item-info {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+	color: #808080;
+}

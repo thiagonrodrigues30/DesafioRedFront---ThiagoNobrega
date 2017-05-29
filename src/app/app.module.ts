@@ -14,6 +14,7 @@ import { HomeService } from './home/home.service';
 import { CarouselMainComponent } from './home/carousel-main/carousel-main.component';
 import { CarouselModule } from 'ngx-bootstrap';
 import { NewsComponent } from './home/news/news.component';
+import { BannerComponent } from './home/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NewsComponent } from './home/news/news.component';
     HomeComponent,
     SearchComponent,
     CarouselMainComponent,
-    NewsComponent
+    NewsComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule,

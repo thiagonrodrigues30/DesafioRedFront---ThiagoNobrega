@@ -103,6 +103,20 @@ export class HomeService {
 	}
 	];
 
+	info1: any = {
+		image: '/assets/Oscars-Wallpapers-3.jpg',
+		title: 'ACADEMY AWARDS',
+		infoTitle: 'Actors and Actresses Nominated for the Academy Awards',
+		info: 'Nominations will be announced on January 14, 2016. Chris Rock will return as host for the ceremony which will air live on Sunday...'
+	}
+
+	info2: any = {
+		image: '/assets/starwars.jpg',
+		title: 'Interview',
+		infoTitle: 'Daisy Ridley, Star Wars Cast Talk',
+		info: 'The cast members of Star Wars: The Force Awakens sit down with IMDb to give you the lowdown on all their characters.'
+	}
+
   constructor() { }
 
   getNews() {
@@ -119,6 +133,14 @@ export class HomeService {
 
   getRealTime() {
   	return this.listRealTime;
+  }
+
+  getInfo1() {
+  	return this.info1;
+  }
+
+  getInfo2() {
+  	return this.info2;
   }
 
 }
